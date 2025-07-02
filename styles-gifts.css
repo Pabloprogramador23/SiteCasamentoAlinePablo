@@ -1,0 +1,293 @@
+/* Reset simples */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+/* Botão "Presentear" refinado */
+.btn-gift {
+  display: inline-block;
+  padding: 0.7rem 1.2rem; 
+  border: 2px solid #498881;
+  border-radius: 0.5rem; 
+  background: transparent;
+  color: #498881; 
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.btn-gift:hover {
+  background: #498881; 
+  color: #fff;
+  transform: translateY(-2px);
+}ia e container */
+body { font-family: 'Montserrat', sans-serif; background:#fff; color:#404040; }
+.container { width:90%; max-width:1200px; margin:0 auto; }
+
+/* Header / Hero */
+.gift-header { position: relative; height:300px; overflow:hidden; }
+.gift-header .hero-bg { width:100%; height:100%; object-fit:cover; filter: brightness(0.7); }
+.hero-title {
+  position:absolute; top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  font-family:'Great Vibes', cursive;
+  font-size:3rem; color:#fff;
+}
+
+/* Filtros */
+.gift-filters { 
+  padding: 1.5rem 0; 
+  background: #fff; 
+}
+
+.filter-group { 
+  display: inline-block; 
+  margin-right: 1.5rem; 
+  margin-bottom: 1rem;
+}
+
+.filter-group label { 
+  margin-right: 0.5rem; 
+  font-weight: 500; 
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.filter-group select {
+  padding: 0.5rem; 
+  border: 1px solid #ccc; 
+  border-radius: 0.25rem;
+  min-width: 150px;
+}
+
+/* Grid de presentes */
+.gifts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.gift-card {
+  background: #f3f3f3; 
+  border-radius: 1rem;
+  padding: 1rem; 
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.gift-card:hover { 
+  transform: translateY(-4px); 
+}
+
+.gift-card img {
+  width: 100%; 
+  height: 200px;
+  border-radius: 0.5rem; 
+  object-fit: cover;
+}
+
+.gift-card h3 { 
+  margin: 0.75rem 0 0.25rem; 
+  font-size: 1.1rem; 
+  line-height: 1.3;
+  min-height: 2.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gift-card .gift-price { 
+  margin-bottom: 0.75rem; 
+  font-weight: 700; 
+  font-size: 1.1rem;
+  color: #498881;
+}
+    
+/* Botão “Presentear” refinado */
+.btn-gift {
+  padding:0.5rem 1rem; border:2px solid #498881;
+  border-radius:0.5rem; background:transparent;
+  color:#498881; font-weight:600;
+  transition: all 0.2s ease;
+}
+.btn-gift:hover {
+  background:#498881; color:#fff;
+  transform: translateY(-2px);
+}
+
+/* ===========================================
+   MEDIA QUERIES - RESPONSIVIDADE
+   =========================================== */
+
+/* Tablets (até 1024px) */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 95%;
+    padding: 0 1rem;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .gifts-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    padding: 1.5rem 0;
+  }
+  
+  .gift-card img {
+    height: 180px;
+  }
+  
+  .gift-card h3 {
+    font-size: 1rem;
+    min-height: 2.4em;
+  }
+}
+
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  .gift-header {
+    height: 250px;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .gift-filters {
+    padding: 1rem 0;
+  }
+  
+  .filter-group {
+    display: block;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+  
+  .filter-group select {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .gifts-grid {
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .gift-card {
+    padding: 0.8rem;
+  }
+  
+  .gift-card img {
+    height: 160px;
+  }
+  
+  .gift-card h3 {
+    font-size: 0.95rem;
+    margin: 0.5rem 0 0.25rem;
+  }
+  
+  .gift-card .gift-price {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn-gift {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Celulares (até 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 98%;
+    padding: 0 0.5rem;
+  }
+  
+  .gift-header {
+    height: 200px;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .gifts-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 0.8rem 0;
+  }
+  
+  .gift-card {
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gift-card img {
+    height: 140px;
+  }
+  
+  .gift-card h3 {
+    font-size: 0.9rem;
+    min-height: 2.2em;
+    margin: 0.4rem 0 0.2rem;
+  }
+  
+  .gift-card .gift-price {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .btn-gift {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  
+  .gift-filters {
+    padding: 0.8rem 0;
+  }
+  
+  .filter-group {
+    margin-bottom: 0.8rem;
+  }
+  
+  .filter-group label {
+    font-size: 0.9rem;
+  }
+  
+  .filter-group select {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Celulares muito pequenos (até 320px) */
+@media screen and (max-width: 320px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .gift-card img {
+    height: 120px;
+  }
+  
+  .gift-card h3 {
+    font-size: 0.85rem;
+  }
+  
+  .gift-card .gift-price {
+    font-size: 0.9rem;
+  }
+  
+  .btn-gift {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
+  }
+}

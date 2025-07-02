@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Lista de Presentes</title>
+  <link rel="stylesheet" href="styles-gifts.css">
+</head>
+<body>
+  <!-- HEADER / HERO -->
+  <header class="gift-header">
+    <div class="container">
+      <img src="assets/images/0afe3202-d120-476e-8580-a6635990e430.jpeg" alt="Aros de casamento" class="hero-bg">
+      <h1 class="hero-title">Pablo &amp; Aline</h1>
+    </div>
+  </header>
+
+  <!-- FILTROS -->
+  <section class="gift-filters">
+    <div class="container">
+      <div class="filter-group">
+        <label for="filter-price">Preço</label>
+        <select id="filter-price">
+          <option value="all">Todos</option>
+          <option value="0-50">Até R$50</option>
+          <option value="50-100">R$50–100</option>
+          <option value="100-9999">Acima de R$100</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-type">Categoria</label>
+        <select id="filter-type">
+          <option value="all">Todas</option>
+          <option value="experiencia">Experiência</option>
+          <option value="itens">Itens</option>
+          <!-- adicione aqui suas categorias -->
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="sort-order">Ordenar por</label>
+        <select id="sort-order">
+          <option value="default">Padrão</option>
+          <option value="price-asc">Preço ↑</option>
+          <option value="price-desc">Preço ↓</option>
+          <option value="name-asc">Nome A→Z</option>
+          <option value="name-desc">Nome Z→A</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID DE PRESENTES -->
+  <section class="gift-list">
+    <div class="container">
+      <div id="gifts-container" class="gifts-grid">
+        <div class="gift-card" data-price="55" data-type="itens">
+          <img src="assets/images/pratinho.jpeg" alt="Pratinho de madrugada">
+          <h3>Pratinho de madrugada</h3>
+          <p class="gift-price">R$ 55,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>  
+
+        <div class="gift-card" data-price="69" data-type="itens">
+          <img src="assets/images/tampao_ouvido.jpeg" alt="Tampa de ouvido pra noiva enquanto noivo ronca">
+          <h3>Tampa de ouvido pra noiva enquanto noivo ronca</h3>
+          <p class="gift-price">R$ 69,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="73" data-type="experiencia">
+          <img src="assets/images/cafe-da-manha.png" alt="Café da manhã na lua de mel">
+          <h3>Café da manhã na lua de mel</h3>
+          <p class="gift-price">R$ 73,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="75" data-type="experiencia">
+          <img src="assets/images/1_almoco.jpeg" alt="1º almoço dos noivos">
+          <h3>1º almoço dos noivos</h3>
+          <p class="gift-price">R$ 75,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="80" data-type="itens">
+          <img src="assets/images/cafe-da-manha-no-quarto.png" alt="Café da manhã no quarto">
+          <h3>Café da manhã no quarto</h3>
+          <p class="gift-price">R$ 80,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="80" data-type="itens">
+          <img src="assets/images/so-para-nao-dizer-que-eu-nao-dei-nada.png" alt="Só para não dizer que eu não dei nada">
+          <h3>Só para não dizer que eu não dei nada</h3>
+          <p class="gift-price">R$ 80,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="80" data-type="experiencia">
+          <img src="assets/images/aquela_ajuda.jpeg" alt="Ajuda para lua de mel">
+          <h3>Ajuda para lua de mel</h3>
+          <p class="gift-price">R$ 80,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="80" data-type="itens">
+          <img src="assets/images/pijama.jpeg" alt="Pijama para os noivos usarem na lua de mel">
+          <h3>Pijama para os noivos usarem na lua de mel</h3>
+          <p class="gift-price">R$ 80,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="81.99" data-type="itens">
+          <img src="assets/images/tenho_na_conta.jpeg" alt="Tudo o que eu tenho na conta">
+          <h3>Tudo o que eu tenho na conta</h3>
+          <p class="gift-price">R$ 81,99</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="99" data-type="itens">
+          <img src="assets/images/colirio.jpeg" alt="Colírio pro noivo chorar quando a noiva entrar">
+          <h3>Colírio pro noivo chorar quando a noiva entrar</h3>
+          <p class="gift-price">R$ 99,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="99" data-type="itens">
+          <img src="assets/images/tacas.jpeg" alt="Jogo de taças">
+          <h3>Jogo de taças</h3>
+          <p class="gift-price">R$ 99,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="100" data-type="itens">
+          <img src="assets/images/almofada-com-a-foto-do-casal.png" alt="Almofada com a foto do casal">
+          <h3>Almofada com a foto do casal</h3>
+          <p class="gift-price">R$ 100,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="100" data-type="itens">
+          <img src="assets/images/contribuicao-para-a-gravata-dos-noivos.png" alt="Contribuição para a gravata dos noivos">
+          <h3>Contribuição para a gravata dos noivo</h3>
+          <p class="gift-price">R$ 100,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="100" data-type="experiencia">
+          <img src="assets/images/diaria_lua_mel.jpeg" alt="Diária Lua de Mel">
+          <h3>Diária Lua de Mel</h3>
+          <p class="gift-price">R$ 100,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="100" data-type="experiencia">
+          <img src="assets/images/sorvete.jpeg" alt="Um sorvete durante a lua de mel">
+          <h3>Um sorvete durante a lua de mel</h3>
+          <p class="gift-price">R$ 100,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="100" data-type="itens">
+          <img src="assets/images/lista-de-supermercado-pronta.png" alt="Lista de supermercado pronta">
+          <h3>Lista de supermercado pronta</h3>
+          <p class="gift-price">R$ 100,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="100" data-type="experiencia">
+          <img src="assets/images/cafe-da-manha-no-hotel.jpeg" alt="Café da manhã no hotel">
+          <h3>Café da manhã no hotel</h3>
+          <p class="gift-price">R$ 100,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="100" data-type="experiencia">
+          <img src="assets/images/podcast-para-se-sair-bem-em-uma-dr.png" alt="Podcast para se sair bem em uma DR">
+          <h3>Podcast para se sair bem em uma DR</h3>
+          <p class="gift-price">R$ 100,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="100" data-type="experiencia">
+          <img src="assets/images/tomar_tacaca.jpeg" alt="Eu vou tomar um tacacá">
+          <h3>Eu vou tomar um tacacá</h3>
+          <p class="gift-price">R$ 100,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="100" data-type="itens">
+          <img src="assets/images/tutorial-de-como-fritar-um-ovo.png" alt="Tutorial de como fritar um ovo">
+          <h3>Tutorial de como fritar um ovo</h3>
+          <p class="gift-price">R$ 100,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="100" data-type="experiencia">
+          <img src="assets/images/lua_de_mel.jpeg" alt="Lua de mel ✨💑">
+          <h3>Lua de mel ✨💑</h3>
+          <p class="gift-price">R$ 100,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="100" data-type="experiencia">
+          <img src="assets/images/degustacao-de-vinho.png" alt="Degustação de vinho">
+          <h3>Degustação de vinho</h3>
+          <p class="gift-price">R$ 100,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="101" data-type="experiencia">
+          <img src="assets/images/por_do_sol.jpeg" alt="Curtir um lindo pôr do sol">
+          <h3>Curtir um lindo pôr do sol</h3>
+          <p class="gift-price">R$ 101,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="102" data-type="itens">
+          <img src="assets/images/pra_nao_dizer.jpeg" alt="Pra não dizer que não dei nada">
+          <h3>Pra não dizer que não dei nada</h3>
+          <p class="gift-price">R$ 102,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="120" data-type="experiencia">
+          <img src="assets/images/taxa-para-pedir-uma-musica-para-o-dj.png" alt="Taxa para pedir uma música para o DJ">
+          <h3>Taxa para pedir uma música para o DJ</h3>
+          <p class="gift-price">R$ 120,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="120" data-type="experiencia">
+          <img src="assets/images/passeio-pelo-centro-historico.png" alt="Passeio pelo centro histórico">
+          <h3>Passeio pelo centro histórico</h3>
+          <p class="gift-price">R$ 120,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="150" data-type="experiencia">
+          <img src="assets/images/cafe_da_manha_zona_sul_destaque.jpg" alt="Café da manhã">
+          <h3>Café da manhã</h3>
+          <p class="gift-price">R$ 150,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="150" data-type="experiencia">
+          <img src="assets/images/almoco-na-cidade.png" alt="Almoço na cidade">
+          <h3>Almoço na cidade</h3>
+          <p class="gift-price">R$ 150,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="150" data-type="experiencia">
+          <img src="assets/images/brunch-no-hotel.png" alt="Brunch no hotel">
+          <h3>Brunch no hotel</h3>
+          <p class="gift-price">R$ 150,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="150" data-type="experiencia">
+          <img src="assets/images/vale_lua_mel.jpeg" alt="Vale Lua de Mel 🎁">
+          <h3>Vale Lua de Mel 🎁</h3>
+          <p class="gift-price">R$ 150,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="150" data-type="experiencia">
+          <img src="assets/images/almoco_paraense.jpeg" alt="Almoço paraense">
+          <h3>Almoço paraense</h3>
+          <p class="gift-price">R$ 150,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+
+        <div class="gift-card" data-price="150" data-type="experiencia">
+          <img src="assets/images/pe_areia.png" alt="Garantir o pé na areia, a caipirinha, água de coco, cervejinha na beira do mar">
+          <h3>Garantir o pé na areia, a caipirinha, água de coco, cervejinha na beira do mar</h3>
+          <p class="gift-price">R$ 150,00</p>
+          <a href="presente.html" class="btn-gift">Presentear</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="scripts-gifts.js"></script>
+</body>
+</html>

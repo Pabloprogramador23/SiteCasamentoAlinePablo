@@ -182,6 +182,67 @@ body {
   transform: translateY(-2px);
 }
 
+/* Estilos para o card do presente selecionado */
+.selected-gift-card {
+  background: #f8f9fa;
+  border: 2px solid #498881;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0 30px 0;
+  box-shadow: 0 4px 12px rgba(73, 136, 129, 0.1);
+}
+
+.gift-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.gift-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #498881;
+}
+
+.gift-details h3 {
+  font-size: 1.2rem;
+  color: #498881;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.gift-details .gift-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2d5a54;
+  margin-bottom: 4px;
+}
+
+.gift-type {
+  background: #498881;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Responsivo para o card selecionado */
+@media (max-width: 600px) {
+  .gift-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .gift-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 /* ===========================================
    MEDIA QUERIES - RESPONSIVIDADE
    =========================================== */

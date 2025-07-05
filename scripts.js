@@ -78,3 +78,36 @@
     });
   });
 })();
+
+// 4. Funcionalidade para presentes na index.html
+(function(){
+  // função para capturar dados do presente e navegar
+  function handleGiftSelection(event) {
+    event.preventDefault();
+    
+    const carouselItem = event.target.closest('.carousel-item');
+    const giftData = {
+      name: carouselItem.querySelector('h4').textContent,
+      price: carouselItem.querySelector('p').textContent,
+      image: carouselItem.querySelector('img').getAttribute('src'),
+      type: carouselItem.getAttribute('data-type') || 'experiencia'
+    };
+    
+    // converte para URL parameters
+    const params = new URLSearchParams({
+      name: giftData.name,
+      price: giftData.price,
+      image: giftData.image,
+      type: giftData.type
+    });
+    
+    // navega para presente.html com os parâmetros
+    window.location.href = `presente.html?${params.toString()}`;
+  }
+
+  // adiciona listeners para todos os botões "Presentear" na index
+  const giftButtons = document.querySelectorAll('.carousel-item .btn-gift');
+  giftButtons.forEach(button => {
+    button.addEventListener('click', handleGiftSelection);
+  });
+})();

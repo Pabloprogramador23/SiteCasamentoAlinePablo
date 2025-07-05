@@ -11,6 +11,8 @@ const cards = Array.from(container.querySelectorAll('.gift-card'));
 function render(filtered) {
   container.innerHTML = '';
   filtered.forEach(card => container.appendChild(card));
+  // readiciona os listeners após re-render
+  addGiftListeners();
 }
 
 // aplica filtros e ordenação
@@ -53,6 +55,39 @@ function applyFilters() {
   render(result);
 }
 
+// função para capturar dados do presente e navegar
+function handleGiftSelection(event) {
+  event.preventDefault();
+  
+  const card = event.target.closest('.gift-card');
+  const imgElement = card.querySelector('img');
+  const giftData = {
+    name: card.querySelector('h3').textContent,
+    price: card.querySelector('.gift-price').textContent,
+    image: imgElement.getAttribute('src'), // usa getAttribute para pegar o caminho relativo
+    type: card.dataset.type
+  };
+  
+  // converte para URL parameters
+  const params = new URLSearchParams({
+    name: giftData.name,
+    price: giftData.price,
+    image: giftData.image,
+    type: giftData.type
+  });
+  
+  // navega para presente.html com os parâmetros
+  window.location.href = `presente.html?${params.toString()}`;
+}
+
+// adiciona listeners para todos os botões "Presentear"
+function addGiftListeners() {
+  const giftButtons = container.querySelectorAll('.btn-gift');
+  giftButtons.forEach(button => {
+    button.addEventListener('click', handleGiftSelection);
+  });
+}
+
 // listeners
 priceFilter.addEventListener('change', applyFilters);
 typeFilter.addEventListener('change', applyFilters);
@@ -60,3 +95,4 @@ sortOrder.addEventListener('change', applyFilters);
 
 // render inicial
 render(cards);
+addGiftListeners();

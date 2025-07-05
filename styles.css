@@ -8,7 +8,7 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #b56f59;
+  background: #e2725b; /* terracota */
   color: #fff;
   line-height: 1.5;
 }
@@ -23,7 +23,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(181, 111, 89, 0.9);
+  background: rgba(226, 114, 91, 0.9); /* terracota com transparência */
   backdrop-filter: blur(5px);
   z-index: 100;
 }
@@ -125,7 +125,7 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(135deg, rgba(226, 114, 91, 0.1), rgba(226, 114, 91, 0.05));
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -203,7 +203,7 @@ body {
   padding: 0.6rem 1.2rem;
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 0.75rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(135deg, rgba(226, 114, 91, 0.1), rgba(226, 114, 91, 0.05));
   color: #fff;
   font-size: 0.9rem;
   font-weight: 600;
@@ -266,7 +266,7 @@ body {
 .btn-more {
   margin-top: 1rem;
   padding: 0.8rem 2rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(135deg, rgba(226, 114, 91, 0.15), rgba(226, 114, 91, 0.05));
   border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 0.75rem;
   color: #fff;
@@ -331,7 +331,7 @@ body {
   border: none;
   border-radius: 0.75rem;
   background: linear-gradient(135deg, #fff 0%, #f8f8f8 100%);
-  color: #b56f59;
+  color: #e2725b; /* terracota */
   font-weight: bold;
   font-size: 1rem;
   text-transform: uppercase;
@@ -350,7 +350,7 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(181, 111, 89, 0.1), transparent);
+  background: linear-gradient(90deg, transparent, rgba(226, 114, 91, 0.1), transparent);
   transition: left 0.5s;
 }
 
@@ -374,7 +374,7 @@ body {
   padding: 2rem 0;
   text-align: center;
   font-size: 0.9rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(226, 114, 91, 0.2); /* terracota com transparência */
 }
 .decor-footer {
   width: 60px;

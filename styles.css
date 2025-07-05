@@ -54,7 +54,7 @@ body {
 /* HERO */
 .hero {
   /* caminho relativo a partir do index.html */
-  background: url('assets/images/0afe3202-d120-476e-8580-a6635990e430.jpeg') center/cover no-repeat;
+  background: url('assets/images/Hochzeit4.jpg') center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -68,9 +68,11 @@ body {
   border-radius: 1rem;
 }
 .hero-title {
-  font-family: 'Great Vibes', cursive;
-  font-size: 4rem;
+  font-family: 'Brittany Signature', cursive;
+  font-size: 5.5rem;
   margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+  word-spacing: 0.1em;
 }
 .hero-sub {
   letter-spacing: 2px;
@@ -641,4 +643,19 @@ body {
     font-size: 0.8rem;
     padding: 0.6rem 1.2rem;
   }
+}
+
+.gift-header .hero-title,
+.gift-header h1,
+.gift-header .logo {
+  font-family: 'Great Vibes', cursive !important;
+  font-size: 3rem;
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'Brittany Signature';
+  src: url('assets/fonts/BrittanySignature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

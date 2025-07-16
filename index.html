@@ -147,21 +147,16 @@
         <input type="text" name="nome" placeholder="Nome completo" required>
         <input type="email" name="email" placeholder="E-mail" required>
         <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
-        <div>
-          <label><input type="radio" name="comparece" value="sim" required> Sim</label>
-          <label><input type="radio" name="comparece" value="nao"> Não</label>
-        </div>
         <select name="adultos">
           <option value="" disabled selected>Quantidade de adultos</option>
-          <option>1</option><option>2</option><option>3</option>
+          <option>1</option>
         </select>
+        <input type="text" name="acompanhante" placeholder="Nome completo do acompanhante">
         <select name="criancas">
           <option value="" disabled selected>Quantidade de crianças (até 7 anos)</option>
-          <option>0</option><option>1</option><option>2</option>
+          <option>0</option><option>1</option>
         </select>
         <textarea name="observacoes" class="full-width" placeholder="Observações"></textarea>
-        <label><input type="checkbox" name="notificacoes"> Quero receber notificações pelo WhatsApp</label>
-        <label><input type="checkbox" name="termos" required> Concordo com os Termos de uso e Política de Privacidade</label>
         <button type="submit" class="btn-submit">Confirmar Presença</button>
       </form>
     </div>

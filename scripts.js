@@ -44,8 +44,8 @@
     const nome    = form.nome.value.trim();
     const email   = form.email.value.trim();
     const whatsapp= form.whatsapp.value.trim();
-    const comparece = form.comparece.value;
     const adultos = form.adultos.value;
+    const acompanhante = form.acompanhante.value.trim();
     const criancas= form.criancas.value;
     const obs     = form.observacoes.value.trim();
 
@@ -55,8 +55,9 @@
       `Nome: ${nome}%0A` +
       `E-mail: ${email}%0A` +
       `WhatsApp: ${whatsapp}%0A` +
-      `Vai comparecer? ${comparece}%0A` +
-      `Adultos: ${adultos} | Crianças: ${criancas}%0A` +
+      `Adultos: ${adultos}%0A` +
+      `Acompanhante: ${acompanhante}%0A` +
+      `Crianças: ${criancas}%0A` +
       `Observações: ${obs}`;
 
     // Abre WhatsApp Web/App
